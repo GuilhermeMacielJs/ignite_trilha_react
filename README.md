@@ -14,7 +14,7 @@ yarn add react
 
 
 //Instalação do babel, interface cli e configurações de preset. Depêndencias abaixo instalado em modo de desenvolvedor.
---yarn add @babel/core @babel/cli @babel/preset-env -D
+--yarn add @babel/core @babel/cli @babel/preset-env @babel/preset-react -D
 
 //Integração entre o babel e o webpack (faz a conversão).
 --yarn add babel-loader
