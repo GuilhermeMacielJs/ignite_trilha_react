@@ -35,3 +35,40 @@ yarn add react
 
 //Instalar o sass no projeto react
 --yarn add node-sass sass-loader -D
+
+
+
+
+
+///// Instalação do Typescription
+
+yarn add tsc -D
+
+//Inicializa um projeto ts
+yarn tsc --init
+
+
+----------------- Instrutura do tsconfig -----------------
+/*
+{
+  "compilerOptions": {                          
+    "lib": ["dom","dom.iterable","esnext"],                                   
+    "allowJs": true,                             
+    "jsx": "react-jsx",                           
+    "noEmit": true,                              
+    "strict": true,                                 
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,        
+    "allowSyntheticDefaultImports": true,        
+    "esModuleInterop": true,                        
+    "skipLibCheck": true,                           
+    "forceConsistentCasingInFileNames": true,     
+  },
+    "include":["src"]
+}
+*/
+
+// Fazer com que o babel intenda ts
+
+yarn add @babel/preset-typescript -D
