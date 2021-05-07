@@ -13,7 +13,7 @@ export default NextAuth({
     }),
   ],
   callbacks: {
-    async signIn(user, acount, profile) {
+    async signIn(user, account, profile) {
 
       const { email } = user
 
@@ -33,8 +33,10 @@ export default NextAuth({
               { data: { email } }
             ),
           q.Get(
+            q.Match(
               q.Index('user_by_email'),
               q.Casefold(user.email)
+            )
             )
           )
         )
